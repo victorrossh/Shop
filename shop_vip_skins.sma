@@ -17,7 +17,7 @@
 #pragma tabsize 0
 
 #define KNIFE_NUM 18
-#define USP_NUM 12
+#define USP_NUM 13
 #define CHARS_NUM 5
 
 enum _: eSkin
@@ -62,7 +62,9 @@ new g_Usps[USP_NUM][eSkin]={
 	{208, "Neo-Noir", 					"models/fwo/shop/vip/usp/v_usp_neo-noir.mdl", 			1500},
 	{209, "Night-Wolf", 				"models/fwo/shop/vip/usp/v_usp_night_wolf.mdl", 		1500},
 	{210, "Sakura", 					"models/fwo/shop/vip/usp/v_usp_sakura.mdl", 			1500},
-	{211, "Xiao", 						"models/fwo/shop/vip/usp/v_usp_xiao.mdl", 				1500}
+	{211, "Xiao", 						"models/fwo/shop/vip/usp/v_usp_xiao.mdl", 				1500},
+	{212, "Xtreme-Jumps", 						"models/fwo/shop/vip/usp/v_usp_xtreme.mdl", 				1500}
+
 };
 
 new g_Chars[CHARS_NUM][eSkin]={
@@ -373,3 +375,6 @@ public BuyPlayerSkin(id, item){
 		CC_SendMessage(id, "&x01Você não tem créditos suficiente para comprar esta skin.");
 	}
 }
+/* AMXX-Studio Notes - DO NOT MODIFY BELOW HERE
+*{\\ rtf1\\ ansi\\ deff0{\\ fonttbl{\\ f0\\ fnil Tahoma;}}\n\\ viewkind4\\ uc1\\ pard\\ lang1046\\ f0\\ fs16 \n\\ par }
+*/
